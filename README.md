@@ -9,9 +9,9 @@
 KNA（[wearekna.com](https://wearekna.com)）是一家独立运营的 Claude API 中转服务，专为中国大陆开发者打造：
 
 - **免海外信用卡**，微信、支付宝直接充值
-- **Anthropic 官方价 5 折**，同样的 token 只付一半钱，余额永不过期
+- **引流期官方价 1.5 折** — 同样的 token 只付 Anthropic 官方价的 15%，余额永不过期。先充先享，之后会涨价
 - **3 分钟拿到 API Key**，5 分钟接入 Claude Code / Cursor / Cline / Hermes / 任何 Anthropic SDK 工具
-- **网页直接聊**：[chat.wearekna.com](https://chat.wearekna.com)，注册即送 100 万 Sonnet token（5 折后等于 200 万官方 token）
+- **网页直接聊**：[chat.wearekna.com](https://chat.wearekna.com)，注册即送 100 万 Sonnet token（1.5 折后等于约 666 万官方 token）
 
 ## 🗺️ 找到你需要的
 
@@ -60,18 +60,20 @@ KNA 独立运营，与 Anthropic 无隶属关系。透明度做法：
 <details>
 <summary>价格怎么算？</summary>
 
-按 Anthropic 官方 token 价 5 折计费 — 实付仅官方一半，无月费、无最低消费。
+**引流期按 Anthropic 官方 token 价 1.5 折计费** — 实付仅官方 15%，无月费、无最低消费。属于限时引流活动，之后会涨价，先充先享。
 
-**当前 KNA 价格（官方价 / KNA 价 per MTok）：**
-- Opus 4.7: $15/$75 → **$7.5/$37.5**
-- Sonnet 4.6: $3/$15 → **$1.5/$7.5**
-- Haiku 4.5: $1/$5 → **$0.5/$2.5**
+**当前 KNA 价格（官方价 → KNA 引流价 per MTok）：**
+- Opus 4.7: $15/$75 → **$2.25/$11.25**
+- Sonnet 4.6: $3/$15 → **$0.45/$2.25**
+- Haiku 4.5: $1/$5 → **$0.15/$0.75**
 
-**充值档位：**
-- 充 ¥30 ≈ $5 USD 余额，5 折后约 333 万 Sonnet 4.6 输入 token
-- 充 ¥200 ≈ $33 USD 余额（含 20% 赠送），约 2200 万 Sonnet 输入 token
+**充值档位（按 1.5 折引流价跑量）：**
+- 充 ¥30 ≈ $5 USD 余额，约 **1100 万** Sonnet 4.6 输入 token（或 3300 万 Haiku 输入 token）
+- 充 ¥200 ≈ $33 USD 余额（含 20% 赠送），约 **7400 万** Sonnet 输入 token
 - 充 ¥1000 含 30% 赠送 + 1v1 客服 + 可申请发票
 - 充 ¥5000 含 50% 赠送 + 团队子账号 + SLA
+
+> ⚠️ 1.5 折是引流期限时价格。我们会在官方提价或活动结束时调价，但已充值余额按当时锁定价格使用，不追溯。
 
 </details>
 
