@@ -9,9 +9,9 @@
 KNA（[wearekna.com](https://wearekna.com)）是一家独立运营的 Claude API 中转服务，专为中国大陆开发者打造：
 
 - **免海外信用卡**，微信、支付宝直接充值
-- **与 Anthropic 1:1 同价**，余额永不过期
+- **Anthropic 官方价 5 折**，同样的 token 只付一半钱，余额永不过期
 - **3 分钟拿到 API Key**，5 分钟接入 Claude Code / Cursor / Cline / Hermes / 任何 Anthropic SDK 工具
-- **网页直接聊**：[chat.wearekna.com](https://chat.wearekna.com)，注册即送 100 万 Sonnet token
+- **网页直接聊**：[chat.wearekna.com](https://chat.wearekna.com)，注册即送 100 万 Sonnet token（5 折后等于 200 万官方 token）
 
 ## 🗺️ 找到你需要的
 
@@ -30,11 +30,11 @@ KNA（[wearekna.com](https://wearekna.com)）是一家独立运营的 Claude API
 ## 💬 进社区
 
 - **GitHub Discussions** — 在这个仓库里直接发帖：[➜ Discussions tab](../../discussions)
-  - `Q&A` 板块：接入卡住、报错排查
-  - `Show & tell` 板块：分享你的 workflow（Cursor + KNA、Claude Code 项目案例等）
-  - `Ideas` 板块：想看的功能、新模型支持
+ - `Q&A` 板块：接入卡住、报错排查
+ - `Show & tell` 板块：分享你的 workflow（Cursor + KNA、Claude Code 项目案例等）
+ - `Ideas` 板块：想看的功能、新模型支持
 - **WeChat 群**：扫码加客服微信进群（前 100 用户已邀请，群满转大群）
-  - 入口：[code.wearekna.com](https://code.wearekna.com) → 页脚二维码
+ - 入口：[code.wearekna.com](https://code.wearekna.com) → 页脚二维码
 
 ## 🛠️ 仓库 / Repos
 
@@ -60,10 +60,16 @@ KNA 独立运营，与 Anthropic 无隶属关系。透明度做法：
 <details>
 <summary>价格怎么算？</summary>
 
-按 Anthropic 官方 token 价 1:1 计费，无月费、无最低消费。
+按 Anthropic 官方 token 价 5 折计费 — 实付仅官方一半，无月费、无最低消费。
 
-- 充 ¥30 ≈ 100 万 Sonnet 输入 token
-- 充 ¥200 ≈ 33 USD 余额（含 20% 赠送）
+**当前 KNA 价格（官方价 / KNA 价 per MTok）：**
+- Opus 4.7: $15/$75 → **$7.5/$37.5**
+- Sonnet 4.6: $3/$15 → **$1.5/$7.5**
+- Haiku 4.5: $1/$5 → **$0.5/$2.5**
+
+**充值档位：**
+- 充 ¥30 ≈ $5 USD 余额，5 折后约 333 万 Sonnet 4.6 输入 token
+- 充 ¥200 ≈ $33 USD 余额（含 20% 赠送），约 2200 万 Sonnet 输入 token
 - 充 ¥1000 含 30% 赠送 + 1v1 客服 + 可申请发票
 - 充 ¥5000 含 50% 赠送 + 团队子账号 + SLA
 
