@@ -33,7 +33,7 @@ KNA（[wearekna.com](https://wearekna.com)）是一家独立运营的 Claude API
  - `Q&A` 板块：接入卡住、报错排查
  - `Show & tell` 板块：分享你的 workflow（Cursor + KNA、Claude Code 项目案例等）
  - `Ideas` 板块：想看的功能、新模型支持
-- **WeChat 群**：扫码加客服微信进群（前 100 用户已邀请，群满转大群）
+- **WeChat 客服群** — 扫码加群，技术答疑 + 重大公告同步
  - 入口：[code.wearekna.com](https://code.wearekna.com) → 页脚二维码
 
 ## 🛠️ 仓库 / Repos
@@ -47,13 +47,16 @@ KNA（[wearekna.com](https://wearekna.com)）是一家独立运营的 Claude API
 ## ❓ 常见问题速答
 
 <details>
-<summary>KNA 安全吗？会不会跑路？</summary>
+<summary>KNA 长期运营吗？数据安全吗？</summary>
 
-KNA 独立运营，与 Anthropic 无隶属关系。透明度做法：
-- 所有 dated model ID 实测公开（[china-claude-api-relays](https://github.com/damonn92/china-claude-api-relays)）
-- 服务器在 Vultr Tokyo 节点，对中国大陆有公开众测仪表盘 `code.wearekna.com/_kna/dashboard`
-- 余额充值不限期使用，不强制订阅
-- 跑路识别清单也是公开的：怎么判断一个中转商靠不靠谱
+KNA 独立运营，与 Anthropic 无隶属关系。我们做了几件可以公开验证的事：
+
+- **协议透明**：100% byte-for-byte 透传 Anthropic 官方 API，不缓存、不读取 prompt、不二次微调。响应头里能看到 `x-upstream: api.anthropic.com`，自己拿 `curl` 就能验
+- **数据不落盘**：只记录 metadata（model、tokens、latency）用于计费与排障，prompt 与 completion 全程不持久化（详见 [wearekna.com/privacy](https://wearekna.com/privacy)）
+- **基础设施可查**：服务器在 Vultr Tokyo 节点，开放众测仪表盘 [code.wearekna.com/_kna/dashboard](https://code.wearekna.com/_kna/dashboard)，大陆访问质量 + 上游 dated model ID 真实状态实时公开
+- **充值即时到账，余额永不过期**，不强制订阅、不预扣
+- **完整退款政策**：7 天内未消费部分原路退回（[wearekna.com/refund](https://wearekna.com/refund)）
+- **行业对比也公开**：[china-claude-api-relays](https://github.com/damonn92/china-claude-api-relays) 把 KNA 和别家放一起做客观对比
 
 </details>
 
@@ -90,13 +93,14 @@ dated ID 在上游会被 Anthropic 不定期下线，KNA 内部有 model rewrite
 </details>
 
 <details>
-<summary>Claude Code 装不上？OAuth 报错？</summary>
+<summary>Claude Code 接入要注意什么？</summary>
 
-最常见的两个坑：
-1. **`sk-kna-` 不是必须的前缀**。真实 KNA Key 是 `sk-` + 64 位 hex，文档老版本误导过部分用户。
-2. **Claude Code 自带 OAuth 凭据**会优先于 `ANTHROPIC_API_KEY` 环境变量。先 `claude /logout` 清掉本地 OAuth，再设环境变量。
+两个常见坑：
 
-完整排查：[wearekna.com/docs#claude-code-troubleshooting](https://wearekna.com/docs)
+1. **KNA Key 格式**：`sk-` + 64 位 hex 字符（开头不带 `kna-` 中段，直接 `sk-...`）。配置时把 `ANTHROPIC_BASE_URL=https://code.wearekna.com` + `ANTHROPIC_AUTH_TOKEN=sk-xxxx` 一起设就行。
+2. **Claude Code 自带 OAuth 凭据** 会优先于环境变量。如果你之前用 Anthropic 官方账号登录过 Claude Code，先跑 `claude /logout` 清掉本地 OAuth session，再设 KNA 环境变量才会生效。
+
+完整排查指南：[wearekna.com/docs](https://wearekna.com/docs)
 
 </details>
 
